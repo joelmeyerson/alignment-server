@@ -64,8 +64,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
-        'DIRS': [os.path.join(BASE_DIR, 'templates')], # added
-        # 'DIRS': [os.path.join(BASE_DIR, 'frontend')], # added
+        # 'DIRS': [os.path.join(BASE_DIR, 'templates')], # added
+        'DIRS': [os.path.join(BASE_DIR, 'frontend')], # added
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -131,9 +131,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # added for React build
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, 'frontend', "build", "static"),  # update the STATICFILES_DIRS
-# )
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'frontend', "build", "static"),  # update the STATICFILES_DIRS
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

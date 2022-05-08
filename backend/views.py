@@ -1,16 +1,16 @@
 import threading
 import json
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render
 from rest_framework import generics
 from .models import Alignment
 from utils.utils import align
-# from .serializers import AlignmentSerializer
+from .serializers import AlignmentSerializer
 
-# class AlignmentView(generics.ListAPIView):
-#     queryset = Alignment.objects.all()
-#     serializer_class = AlignmentSerializer
+class AlignmentView(generics.ListAPIView):
+    queryset = Alignment.objects.all()
+    serializer_class = AlignmentSerializer
 
 # React frontend build
 def index(request):
@@ -26,13 +26,13 @@ def backendView(request):
                   )
 
 # handle POST request from server, process DNA input for alignment
-# @csrf_exempt
+@csrf_exempt
 def addAlignmentView(request):
 
     if request.method == 'POST':
 
-        dna_seq = request.POST['dna_sequence']
-        # dna_seq = request.body.decode('utf-8')
+        # dna_seq = request.POST['dna_sequence'] # receive post from vanilla html page in /templates
+        dna_seq = request.body.decode('utf-8') # receive POST from React
         dna_seq = dna_seq.strip().rstrip()
 
         # create database entry
@@ -46,7 +46,8 @@ def addAlignmentView(request):
         t = threading.Thread(target=doAlignment, args=[a.id], daemon=True)
         t.start()
 
-        return HttpResponseRedirect('/backend/')
+        # return HttpResponseRedirect('/backend/')
+        return HttpResponse(status=204)
 
 
 def doAlignment(id):
