@@ -1,0 +1,21 @@
+<h1>Alignment Server</h1>
+
+<form action="/addAlignment/" method = "post">{% csrf_token %}
+    <input type="text" name="dna_sequence">
+    <input type="submit" value="Submit DNA sequence">
+</form> 
+
+<ul>
+    {% for i in all_ali %}
+    <br></br>
+    <span>########################################</span>
+    <li>DNA input: {{i.input}}</li>
+    <li>Peptide: {{i.input_translation}}</li>
+    <li>Protein sequence: {{i.protein_sequence}}</li>
+    <li>Protein product: {{i.protein_product}}</li>
+    <li>Protein ID: {{i.protein_id}}</li>
+    <li>Position: {{i.position}}</li>
+    <li>{{i.job_complete}}</li>
+    <li>{{i.user}}</li>
+    {% endfor %}
+</ul> 

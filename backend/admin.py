@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Alignment
+
+admin.site.register(Alignment)
+
