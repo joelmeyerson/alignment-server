@@ -1,0 +1,45 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-arm64
+asgiref=3.4.1=pyhd3eb1b0_0
+biopython=1.78=py310h1a28f6b_0
+blas=2.114=openblas
+blas-devel=3.9.0=14_osxarm64_openblas
+bzip2=1.0.8=h620ffc9_4
+ca-certificates=2021.10.8=h4653dfc_0
+certifi=2021.10.8=py310hca03da5_2
+django=3.2.5=pyhd3eb1b0_0
+django-cors-headers=3.11.0=pyhd8ed1ab_0
+djangorestframework=3.13.1=pyhd8ed1ab_0
+krb5=1.19.2=h3b8d789_0
+libblas=3.9.0=14_osxarm64_openblas
+libcblas=3.9.0=14_osxarm64_openblas
+libcxx=12.0.0=hf6beb65_1
+libedit=3.1.20210910=h1a28f6b_0
+libffi=3.4.2=hc377ac9_2
+libgfortran=5.0.0.dev0=11_0_1_hf114ba7_23
+libgfortran5=11.0.1.dev0=hf114ba7_23
+liblapack=3.9.0=14_osxarm64_openblas
+liblapacke=3.9.0=14_osxarm64_openblas
+libopenblas=0.3.20=openmp_h2209c59_0
+libpq=12.9=h65cfe13_1
+llvm-openmp=14.0.3=hd125106_0
+ncurses=6.3=h1a28f6b_2
+numpy=1.21.5=py310hdb36b11_2
+numpy-base=1.21.5=py310h5e3e9f0_2
+openblas=0.3.20=openmp_h745f6c2_0
+openssl=1.1.1o=ha287fd2_0
+pip=21.2.4=py310hca03da5_0
+psycopg2=2.8.6=py310hf27765b_1
+python=3.10.4=hbdb9e5c_0
+pytz=2021.3=pyhd3eb1b0_0
+readline=8.1.2=h1a28f6b_1
+setuptools=61.2.0=py310hca03da5_0
+sqlite=3.38.2=h1058600_0
+sqlparse=0.4.1=py_0
+tk=8.6.11=hb8d0fd4_0
+typing_extensions=4.1.1=pyh06a4308_0
+tzdata=2022a=hda174b7_0
+wheel=0.37.1=pyhd3eb1b0_0
+xz=5.2.5=h1a28f6b_0
+zlib=1.2.12=h5a0b063_2

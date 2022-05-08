@@ -127,3 +127,20 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+# React
+node_modules/
+.cache/
+dist/
+.env
+.DS_Store
+coverage/
+.vscode/
