@@ -27,33 +27,33 @@ SECRET_KEY = 'django-insecure-2j7crrve&32^b=n6n!gr^l4cf-sdv#fga=e50$bm)#zoa#wh88
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = [
-    'localhost:3000',
-    '127.0.0.1',
-    '127.0.0.1:8000',
-    '0.0.0.0',
-    'localhost',
-]
+ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = [
+#     'localhost:3000',
+#     '127.0.0.1',
+#     '127.0.0.1:8000',
+#     '0.0.0.0',
+#     'localhost',
+# ]
 
 # added to whitelist React server
-CORS_ORIGIN_WHITELIST = [
-    'https://127.0.0.1:3000',
-    'https://127.0.0.1:8000',
-    'https://127.0.0.1',
-    'http://127.0.0.1:8000',
-]
+# CORS_ORIGIN_WHITELIST = [
+#     'https://127.0.0.1:3000',
+#     'https://127.0.0.1:8000',
+#     'https://127.0.0.1',
+#     'http://127.0.0.1:8000',
+# ]
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-CORS_ALLOW_HEADERS = (
-    'x-requested-with',
-    'content-type',
-    'accept',
-    'origin',
-    'authorization',
-    'x-csrftoken'
-)
+# CORS_ALLOW_HEADERS = (
+#     'x-requested-with',
+#     'content-type',
+#     'accept',
+#     'origin',
+#     'authorization',
+#     'x-csrftoken'
+# )
 
 # REST_FRAMEWORK = {
 #     'DEFAULT_PERMISSION_CLASSES': [
