@@ -25,8 +25,8 @@ export default function AlignmentApp() {
   async function fetchAlignments() {
     await fetch(
       // "http://127.0.0.1:8000/api/alignment",
-      // "http://0.0.0.0:5000/api/alignment",
-      "https://secure-wildwood-12717.herokuapp.com/api/alignment",
+      "http://0.0.0.0:5000/api/alignment",
+      // "https://secure-wildwood-12717.herokuapp.com/api/alignment",
       {
         method: "GET",
         credentials: "same-origin",
@@ -66,8 +66,8 @@ export default function AlignmentApp() {
     } else {
       // POST to server
       // const response = await fetch("http://127.0.0.1:8000/addAlignment/", {
-        // const response = await fetch("http://0.0.0.0:5000/addAlignment/", {
-        const response = await fetch("https://secure-wildwood-12717.herokuapp.com/addAlignment/", {
+        const response = await fetch("http://0.0.0.0:5000/addAlignment/", {
+        // const response = await fetch("https://secure-wildwood-12717.herokuapp.com/addAlignment/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
