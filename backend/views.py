@@ -43,14 +43,14 @@ def addAlignmentView(request):
         a.save()
 
         # start background process to handle alignment
-        t = threading.Thread(target=doAlignment, args=[a.id], daemon=True)
+        t = threading.Thread(target=do_alignment, args=[a.id], daemon=True)
         t.start()
 
         # return HttpResponseRedirect('/backend/')
         return HttpResponse(status=204)
 
 
-def doAlignment(id):
+def do_alignment(id):
     a = Alignment.objects.get(pk=id)
 
     # run alignment
