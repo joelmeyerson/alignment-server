@@ -30,10 +30,10 @@ DEBUG = True
 # ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS = [
     'localhost:3000',
-    'secure-wildwood-12717.herokuapp.com',
     '127.0.0.1',
     '127.0.0.1:8000',
     '0.0.0.0',
+    'localhost',
 ]
 
 # added to whitelist React server
@@ -41,7 +41,7 @@ CORS_ORIGIN_WHITELIST = [
     'https://127.0.0.1:3000',
     'https://127.0.0.1:8000',
     'https://127.0.0.1',
-    'https://secure-wildwood-12717.herokuapp.com',
+    'http://127.0.0.1:8000',
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
