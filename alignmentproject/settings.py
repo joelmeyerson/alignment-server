@@ -27,14 +27,13 @@ SECRET_KEY = 'django-insecure-2j7crrve&32^b=n6n!gr^l4cf-sdv#fga=e50$bm)#zoa#wh88
 DEBUG = True
 
 # ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS = [
-    '0.0.0.0',
     'localhost:3000',
     'secure-wildwood-12717.herokuapp.com',
     '127.0.0.1',
     '127.0.0.1:8000',
 ]
-# ALLOWED_HOSTS = ['*']
 
 # added to whitelist React server
 CORS_ORIGIN_WHITELIST = [
@@ -43,7 +42,8 @@ CORS_ORIGIN_WHITELIST = [
      'https://127.0.0.1',
      'https://secure-wildwood-12717.herokuapp.com',
 ]
-# CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # REST_FRAMEWORK = {
