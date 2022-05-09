@@ -23,7 +23,12 @@ export default function AlignmentApp() {
 
   // fetch alignments
   async function fetchAlignments() {
-    await fetch("https://127.0.0.1:8000/api/alignment")
+    await fetch(
+      "http://127.0.0.1:8000/api/alignment",
+      {
+        credentials: "same-origin",
+      }
+    )
       .then((response) => response.json())
       .then((alignments) => {
         // store list of incomplete jobs
@@ -57,7 +62,7 @@ export default function AlignmentApp() {
       setError(true);
     } else {
       // POST to server
-      const response = await fetch("https://127.0.0.1:8000/addAlignment/", {
+      const response = await fetch("http://127.0.0.1:8000/addAlignment/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -167,7 +172,8 @@ export default function AlignmentApp() {
                     <span className="font-semibold">Input translation:</span> {alignment.input_translation}
                   </p>
                   <p>
-                    <span className="font-semibold">Protein sequence:</span> <span className="text-red-400">{alignment.protein_sequence}</span>
+                    <span className="font-semibold">Protein sequence:</span>{" "}
+                    <span className="text-red-400">{alignment.protein_sequence}</span>
                   </p>
                 </div>
               );
