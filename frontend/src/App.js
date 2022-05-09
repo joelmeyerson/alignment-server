@@ -24,13 +24,9 @@ export default function AlignmentApp() {
   // fetch alignments
   async function fetchAlignments() {
     await fetch(
-      // "http://127.0.0.1:8000/api/alignment",
+      // "http://127.0.0.1:8000/api/alignment"
       // "http://0.0.0.0:5000/api/alignment",
       "https://secure-wildwood-12717.herokuapp.com/api/alignment",
-      {
-        method: "GET",
-        credentials: "same-origin",
-      }
     )
       .then((response) => {
         console.log(response);
