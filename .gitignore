@@ -149,7 +149,7 @@ coverage/
 /coverage
 
 # React production
-/build
+# /build
 
 # React misc
 .DS_Store
