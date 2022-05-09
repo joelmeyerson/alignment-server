@@ -33,6 +33,7 @@ ALLOWED_HOSTS = [
     'secure-wildwood-12717.herokuapp.com',
     '127.0.0.1',
     '127.0.0.1:8000',
+    '0.0.0.0',
 ]
 
 # added to whitelist React server
