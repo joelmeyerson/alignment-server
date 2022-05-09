@@ -24,7 +24,7 @@ export default function AlignmentApp() {
   // fetch alignments
   async function fetchAlignments() {
     // await fetch("http://127.0.0.1:8000/api/alignment")
-    await fetch("http://0.0.0.0:8000/api/alignment")
+    await fetch("http://0.0.0.0:5000/api/alignment")
       .then((response) => response.json())
       .then((alignments) => {
         // store list of incomplete jobs
@@ -59,7 +59,7 @@ export default function AlignmentApp() {
     } else {
       // POST to server
       // const response = await fetch("http://127.0.0.1:8000/addAlignment/", {
-      const response = await fetch("http://0.0.0.0:8000/addAlignment/", {
+      const response = await fetch("http://0.0.0.0:5000/addAlignment/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

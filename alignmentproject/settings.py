@@ -26,7 +26,12 @@ SECRET_KEY = 'django-insecure-2j7crrve&32^b=n6n!gr^l4cf-sdv#fga=e50$bm)#zoa#wh88
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '0.0.0.0'
+    'secure-wildwood.herokuapp.com',
+    '127.0.0.1'
+]
 
 # added to whitelist React server
 CORS_ORIGIN_WHITELIST = [
