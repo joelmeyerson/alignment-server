@@ -26,14 +26,14 @@ export default function AlignmentApp() {
     await fetch(
       // "http://127.0.0.1:8000/api/alignment",
       // "http://0.0.0.0:5000/api/alignment",
-      "https://secure-wildwood-12717.herokuapp.com/api/alignment",
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        credentials: "same-origin",
-      }
+      "https://secure-wildwood-12717.herokuapp.com/api/alignment"
+      // {
+      //   method: "GET",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   credentials: "same-origin",
+      // }
     )
       .then((response) => response.json())
       .then((alignments) => {
