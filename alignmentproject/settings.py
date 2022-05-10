@@ -28,38 +28,8 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['*']
-# ALLOWED_HOSTS = [
-#     'localhost:3000',
-#     '127.0.0.1',
-#     '127.0.0.1:8000',
-#     '0.0.0.0',
-#     'localhost',
-# ]
-
-# added to whitelist React server
-# CORS_ORIGIN_WHITELIST = [
-#     'https://127.0.0.1:3000',
-#     'https://127.0.0.1:8000',
-#     'https://127.0.0.1',
-#     'http://127.0.0.1:8000',
-# ]
 
 CORS_ORIGIN_ALLOW_ALL = True
-
-# CORS_ALLOW_HEADERS = (
-#     'x-requested-with',
-#     'content-type',
-#     'accept',
-#     'origin',
-#     'authorization',
-#     'x-csrftoken'
-# )
-
-# REST_FRAMEWORK = {
-#     'DEFAULT_PERMISSION_CLASSES': [
-#         'rest_framework.permissions.AllowAny',
-#     ]
-# }
 
 # Application definition
 
@@ -160,12 +130,9 @@ USE_TZ = True
 
 
 # added
-# STATIC_ROOT = BASE_DIR / 'staticfiles'
 #STATIC_ROOT = 'static/'
-
 # setup for pythonanywhere server
 STATIC_ROOT = '/home/joelmeyerson/alignment-server/static'
-
 STATIC_URL = 'static/'
 
 # added for React build

@@ -37,7 +37,9 @@ def align(input):
     for g in genomes:
 
         # get record from each genome (assumes each genome only has one record)
-        gb_record = SeqIO.read(open(f"./utils/genomes/{g}", "r"), "gb")
+        # updated for PythonAnywhere server                                                                       
+        gb_record = SeqIO.read(open(f"/home/joelmeyerson/alignment-server/utils/genomes/{g}", "r"), "gb")
+
 
         # iterate through all entries in the record (either "gene" or "CDS")
         for entry in gb_record.features:
