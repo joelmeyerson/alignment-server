@@ -161,7 +161,11 @@ USE_TZ = True
 
 # added
 # STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATIC_ROOT = 'static/'
+#STATIC_ROOT = 'static/'
+
+# setup for pythonanywhere server
+STATIC_ROOT = '/home/joelmeyerson/alignment-server/static'
+
 STATIC_URL = 'static/'
 
 # added for React build

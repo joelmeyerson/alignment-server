@@ -4,7 +4,8 @@ export default function AlignmentApp() {
   let url = "http://127.0.0.1:8000";
 
   if (process.env.NODE_ENV === "production") {
-    url = "https://damp-refuge-51071.herokuapp.com";
+    // url = "https://damp-refuge-51071.herokuapp.com";
+    url = "https://joelmeyerson.pythonanywhere.com";
   }
 
   const [jobsProcessing, setJobsProcessing] = useState([]);
