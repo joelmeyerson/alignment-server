@@ -1,10 +1,6 @@
 ## Alignment Server
 This project was a coding challenge to integrate Django and React and then deploy the site. The site translates input DNA to a peptide and searches genomes for a parent protein.
 
-The application can be seen running here: http://joelmeyerson.pythonanywhere.com/
-
-Note that jobs will take up to ~30 seconds to complete simply because the server is running on a free tier account which has reduced priority.
-
 ## Overview
 1. The client takes a DNA sequence as an input. 
 
